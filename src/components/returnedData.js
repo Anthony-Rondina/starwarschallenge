@@ -1,3 +1,4 @@
+import styles from "./returnData.module.css"
 export default function ReturnedData({
     data,
     formData,
@@ -31,8 +32,8 @@ export default function ReturnedData({
                         return "";
                     } else {
                         return (
-                            <div key={index}>
-                                name: {item.name}
+                            <div className={styles.post} key={index}>
+                                <h2>{item.name}</h2>
                                 <button
                                     onClick={() => {
                                         handleBlock(item.name);

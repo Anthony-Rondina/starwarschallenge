@@ -16,7 +16,5 @@
 footer {
     background-color: #023047;
     border-top: solid 8px goldenrod;
-    position: fixed;
-    bottom: 0;
-    height: 300px;
+    height: 20vh;
 }
