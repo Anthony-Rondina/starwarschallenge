@@ -106,7 +106,7 @@ function MainFunctional() {
                 checkInput={checkInput}
             />
             <BlockedArray blockedArr={blockedArr} handleUnblock={handleUnblock} />
-            <Footer igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
+            <Footer toggle={toggle} setToggle={setToggle} igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
         </div>
     );
 }
