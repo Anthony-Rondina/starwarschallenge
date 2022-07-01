@@ -1,6 +1,7 @@
 article {
     height: 70vh;
     min-height: 63vh;
+    background-color: #edf2f4;
 }
 
 .post {
@@ -8,4 +9,5 @@ article {
     height: 300px;
     width: 200px;
     display: inline-block;
+    margin: 5px;
 }
