@@ -24,7 +24,6 @@ export default function header({
                         ref={searchType}
                         id="pet-select"
                     >
-                        <option value="">Choose an option</option>
                         <option value="people">People</option>
                         <option value="planets">Planets</option>
                         <option value="ships">Ships</option>

@@ -62,7 +62,7 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                         </select>
                     </div>
                     <div className={styles.crownSection}>
-                        <span>Crown:</span>
+                        <span>Emitter:</span>
                         <select
                             onChange={() => {
                                 setToggle(!toggle);
