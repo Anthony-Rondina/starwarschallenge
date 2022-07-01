@@ -90,6 +90,7 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                         >
 
                             <option value="gray">Beskar</option>
+                            <option value="black">Numidium</option>
                             <option value="brown">Wroshyr tree</option>
                             <option value="blue">Dragon's Eye</option>
                             <option value="darkred">Cortosis</option>

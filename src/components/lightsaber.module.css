@@ -45,13 +45,14 @@
 
 .topHilt {
     background-color: black;
-    border: solid 0.5px white;
+    border: solid 0.5px gray;
     height: 20px;
     width: 22px;
 }
 
 .handle {
     background-color: gray;
+    border: solid 0.5px gray;
     width: 60px;
     height: 18px;
     display: flex;
