@@ -4,6 +4,7 @@ import Footer from "./footer";
 import Header from "./header";
 import ReturnedData from "./returnedData";
 import BlockedArray from "./blockedArray";
+import styles from "./mainFunctional.module.css"
 function MainFunctional() {
     const [data, setData] = useState([]);
     const [igniteToggle, setIgniteToggle] = useState(false);
@@ -88,17 +89,18 @@ function MainFunctional() {
 
     return (
         <>
-            <main className="App">
-                <Header
-                    handleChange={handleChange}
-                    searchTerm={searchTerm}
-                    revert={revert}
-                    setRevert={setRevert}
-                    formData={formData}
-                    searchType={searchType}
-                    sortAccending={sortAccending}
-                    sortDeccending={sortDeccending}
-                />
+            <Header
+                handleChange={handleChange}
+                searchTerm={searchTerm}
+                revert={revert}
+                setRevert={setRevert}
+                formData={formData}
+                searchType={searchType}
+                sortAccending={sortAccending}
+                sortDeccending={sortDeccending}
+            />
+            <main>
+
                 <ReturnedData
                     data={data}
                     formData={formData}
@@ -106,9 +108,10 @@ function MainFunctional() {
                     handleBlock={handleBlock}
                     checkInput={checkInput}
                 />
-                <BlockedArray blockedArr={blockedArr} handleUnblock={handleUnblock} />
 
             </main>
+            <BlockedArray blockedArr={blockedArr} handleUnblock={handleUnblock} />
+
             <Footer toggle={toggle} setToggle={setToggle} igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
         </>
     );

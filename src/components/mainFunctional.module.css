@@ -1,0 +1,16 @@
+article {
+    width: 75%;
+    /* border: solid 5px red; */
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
