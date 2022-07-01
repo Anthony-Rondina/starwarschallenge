@@ -32,7 +32,7 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                     ref={bladeColor}
                     id="pet-select"
                 >
-                    <option value="green">Choose your color!</option>
+
                     <option value="green">Green</option>
                     <option value="blue">Blue</option>
                     <option value="red">Red</option>
@@ -47,12 +47,11 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                     ref={ignitionColor}
                     id="pet-select"
                 >
-                    <option value="red">Ignition Switch!</option>
-                    <option value="gray">Gray</option>
-                    <option value="blue">Blue</option>
-                    <option value="red">Red</option>
-                    <option value="cyan">Cyan</option>
-                    <option value="goldenrod">Gold</option>
+                    <option value="red">Cortosis</option>
+                    <option value="gray">Beskar</option>
+                    <option value="blue">Dragon's Eye</option>
+                    <option value="brown">Wroshyr tree</option>
+                    <option value="goldenrod">Aurodium</option>
                     <option value="purple">Purple</option>
                 </select>
                 <select
@@ -62,13 +61,13 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                     ref={crownColor}
                     id="pet-select"
                 >
-                    <option value="black">Choose your Crown!</option>
-                    <option value="gray">Gray</option>
-                    <option value="blue">Blue</option>
-                    <option value="darkred">Red</option>
-                    <option value="cyan">Cyan</option>
-                    <option value="goldenrod">Gold</option>
-                    <option value="purple">Purple</option>
+                    <option value="black">Numidium</option>
+                    <option value="gray">Beskar</option>
+                    <option value="blue">Dragon's Eye</option>
+                    <option value="darkred">Cortosis</option>
+                    <option value="brown">Wroshyr tree</option>
+                    <option value="goldenrod">Aurodium</option>
+                    <option value="green">Fiberplast</option>
                 </select>
                 <select
                     onChange={() => {
@@ -77,13 +76,13 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                     ref={hiltColor}
                     id="pet-select"
                 >
-                    <option value="gray">Choose your Hilt!</option>
-                    <option value="brown">Brown</option>
-                    <option value="blue">Blue</option>
-                    <option value="darkred">Red</option>
-                    <option value="cyan">Cyan</option>
-                    <option value="goldenrod">Gold</option>
-                    <option value="yellow">Yellow</option>
+
+                    <option value="gray">Beskar</option>
+                    <option value="brown">Wroshyr tree</option>
+                    <option value="blue">Dragon's Eye</option>
+                    <option value="darkred">Cortosis</option>
+                    <option value="goldenrod">Aurodium</option>
+                    <option value="green">Fiberplast</option>
                 </select>
                 <select
                     onChange={() => {
@@ -92,13 +91,13 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                     ref={pommelColor}
                     id="pet-select"
                 >
-                    <option value="black">Choose your Pommel!</option>
-                    <option value="green">Green</option>
-                    <option value="blue">Blue</option>
-                    <option value="darkred">Red</option>
-                    <option value="cyan">Cyan</option>
-                    <option value="goldenrod">Gold</option>
-                    <option value="purple">Purple</option>
+                    <option value="black">Numidium</option>
+                    <option value="green">Fiberplast</option>
+                    <option value="blue">Dragon's Eye</option>
+                    <option value="darkred">Cortosis</option>
+                    <option value="brown">Wroshyr tree</option>
+                    <option value="goldenrod">Aurodium</option>
+                    <option value="gray">Beskar</option>
                 </select>
             </div>
         </footer>
