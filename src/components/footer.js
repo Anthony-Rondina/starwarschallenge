@@ -24,81 +24,98 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                 ignitor={chosenIgnitor}
 
             />
-            <div className={styles.buildSaber}>
-                <select
-                    onChange={() => {
-                        setToggle(!toggle);
-                    }}
-                    ref={bladeColor}
-                    id="pet-select"
-                >
+            <div className={styles.saberWrapper}>
+                <div className={styles.buildSaber}>
+                    <div className={styles.bladeSection}>
+                        <span>Blade:</span>
+                        <select
+                            onChange={() => {
+                                setToggle(!toggle);
+                            }}
+                            ref={bladeColor}
+                            id="pet-select"
+                        >
 
-                    <option value="green">Green</option>
-                    <option value="blue">Blue</option>
-                    <option value="red">Red</option>
-                    <option value="cyan">Cyan</option>
-                    <option value="goldenrod">Gold</option>
-                    <option value="purple">Purple</option>
-                </select>
-                <select
-                    onChange={() => {
-                        setToggle(!toggle);
-                    }}
-                    ref={ignitionColor}
-                    id="pet-select"
-                >
-                    <option value="red">Cortosis</option>
-                    <option value="gray">Beskar</option>
-                    <option value="blue">Dragon's Eye</option>
-                    <option value="brown">Wroshyr tree</option>
-                    <option value="goldenrod">Aurodium</option>
-                    <option value="purple">Purple</option>
-                </select>
-                <select
-                    onChange={() => {
-                        setToggle(!toggle);
-                    }}
-                    ref={crownColor}
-                    id="pet-select"
-                >
-                    <option value="black">Numidium</option>
-                    <option value="gray">Beskar</option>
-                    <option value="blue">Dragon's Eye</option>
-                    <option value="darkred">Cortosis</option>
-                    <option value="brown">Wroshyr tree</option>
-                    <option value="goldenrod">Aurodium</option>
-                    <option value="green">Fiberplast</option>
-                </select>
-                <select
-                    onChange={() => {
-                        setToggle(!toggle);
-                    }}
-                    ref={hiltColor}
-                    id="pet-select"
-                >
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="red">Red</option>
+                            <option value="cyan">Cyan</option>
+                            <option value="goldenrod">Gold</option>
+                            <option value="purple">Purple</option>
+                        </select>
+                    </div>
+                    <div className={styles.ignitionSection}>
+                        <span>Ignition Switch:</span>
+                        <select
+                            onChange={() => {
+                                setToggle(!toggle);
+                            }}
+                            ref={ignitionColor}
+                            id="pet-select"
+                        >
+                            <option value="red">Cortosis</option>
+                            <option value="gray">Beskar</option>
+                            <option value="blue">Dragon's Eye</option>
+                            <option value="brown">Wroshyr tree</option>
+                            <option value="goldenrod">Aurodium</option>
+                            <option value="purple">Purple</option>
+                        </select>
+                    </div>
+                    <div className={styles.crownSection}>
+                        <span>Crown:</span>
+                        <select
+                            onChange={() => {
+                                setToggle(!toggle);
+                            }}
+                            ref={crownColor}
+                            id="pet-select"
+                        >
+                            <option value="black">Numidium</option>
+                            <option value="gray">Beskar</option>
+                            <option value="blue">Dragon's Eye</option>
+                            <option value="darkred">Cortosis</option>
+                            <option value="brown">Wroshyr tree</option>
+                            <option value="goldenrod">Aurodium</option>
+                            <option value="green">Fiberplast</option>
+                        </select>
+                    </div>
+                    <div className={styles.hiltSection}>
+                        <span>Hilt:</span>
+                        <select
+                            onChange={() => {
+                                setToggle(!toggle);
+                            }}
+                            ref={hiltColor}
+                            id="pet-select"
+                        >
 
-                    <option value="gray">Beskar</option>
-                    <option value="brown">Wroshyr tree</option>
-                    <option value="blue">Dragon's Eye</option>
-                    <option value="darkred">Cortosis</option>
-                    <option value="goldenrod">Aurodium</option>
-                    <option value="green">Fiberplast</option>
-                </select>
-                <select
-                    onChange={() => {
-                        setToggle(!toggle);
-                    }}
-                    ref={pommelColor}
-                    id="pet-select"
-                >
-                    <option value="black">Numidium</option>
-                    <option value="green">Fiberplast</option>
-                    <option value="blue">Dragon's Eye</option>
-                    <option value="darkred">Cortosis</option>
-                    <option value="brown">Wroshyr tree</option>
-                    <option value="goldenrod">Aurodium</option>
-                    <option value="gray">Beskar</option>
-                </select>
+                            <option value="gray">Beskar</option>
+                            <option value="brown">Wroshyr tree</option>
+                            <option value="blue">Dragon's Eye</option>
+                            <option value="darkred">Cortosis</option>
+                            <option value="goldenrod">Aurodium</option>
+                            <option value="green">Fiberplast</option>
+                        </select>
+                    </div>
+                    <div className={styles.pommelSection}>
+                        <span>Pommel:</span>
+                        <select
+                            onChange={() => {
+                                setToggle(!toggle);
+                            }}
+                            ref={pommelColor}
+                            id="pet-select"
+                        >
+                            <option value="black">Numidium</option>
+                            <option value="green">Fiberplast</option>
+                            <option value="blue">Dragon's Eye</option>
+                            <option value="darkred">Cortosis</option>
+                            <option value="brown">Wroshyr tree</option>
+                            <option value="goldenrod">Aurodium</option>
+                            <option value="gray">Beskar</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </footer>
     );
