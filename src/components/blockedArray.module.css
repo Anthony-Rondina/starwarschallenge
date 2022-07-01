@@ -6,7 +6,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* overflow: scroll; */
+    transition-property: height;
+    transition-duration: 1s;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .results {

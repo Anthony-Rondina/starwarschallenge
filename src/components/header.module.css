@@ -11,6 +11,16 @@ nav {
     justify-content: center;
 }
 
+.blockedButton {
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-top: 177px;
+
+    cursor: pointer;
+}
+
 body {
     margin: 0;
 }

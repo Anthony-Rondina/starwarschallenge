@@ -8,7 +8,9 @@ export default function header({
     formData,
     searchType,
     sortAccending,
-    sortDeccending
+    sortDeccending,
+    blockToggle,
+    setBlockToggle
 }) {
     return (
         <header>
@@ -60,6 +62,7 @@ export default function header({
                         Sort Z-A
                     </button>
                 </div>
+                <button onClick={() => { setBlockToggle(!blockToggle) }} className={styles.blockedButton}>Blocked Content</button>
             </nav>
         </header>
     );

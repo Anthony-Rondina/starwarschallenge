@@ -1,8 +1,7 @@
 import styles from "./blockedArray.module.css"
-export default function blockedArray({ blockedArr, handleUnblock }) {
+export default function blockedArray({ blockedArr, handleUnblock, blockToggle }) {
     return (
-        <aside className={styles.blockedList}>
-            <p>Blocked Content</p>
+        <aside style={{ height: blockToggle ? "100px" : "0px" }} className={styles.blockedList}>
             <div className={styles.results}>
                 {
                     blockedArr.map((blockedName, index) => {

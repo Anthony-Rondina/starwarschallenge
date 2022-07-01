@@ -7,6 +7,7 @@ import BlockedArray from "./blockedArray";
 import styles from "./mainFunctional.module.css"
 function MainFunctional() {
     const [data, setData] = useState([]);
+    const [blockToggle, setBlockToggle] = useState(false)
     const [igniteToggle, setIgniteToggle] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [revert, setRevert] = useState(false);
@@ -98,7 +99,11 @@ function MainFunctional() {
                 searchType={searchType}
                 sortAccending={sortAccending}
                 sortDeccending={sortDeccending}
+                blockToggle={blockToggle}
+                setBlockToggle={setBlockToggle}
             />
+            <BlockedArray blockToggle={blockToggle} blockedArr={blockedArr} handleUnblock={handleUnblock} />
+
             <main>
 
                 <ReturnedData
@@ -110,7 +115,6 @@ function MainFunctional() {
                 />
 
             </main>
-            <BlockedArray blockedArr={blockedArr} handleUnblock={handleUnblock} />
 
             <Footer toggle={toggle} setToggle={setToggle} igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
         </>
