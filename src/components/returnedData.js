@@ -6,7 +6,7 @@ export default function ReturnedData({
     checkInput
 }) {
     return (
-        <>
+        <article>
             {data.map((item, index) => {
                 for (let i = 0; i < formData.searchTerm.length; i++) {
                     if (blockedArr.includes(`${item.name}`)) {
@@ -45,6 +45,6 @@ export default function ReturnedData({
                     }
                 }
             })}
-        </>
+        </article>
     );
 }

@@ -87,27 +87,30 @@ function MainFunctional() {
     };
 
     return (
-        <div className="App">
-            <Header
-                handleChange={handleChange}
-                searchTerm={searchTerm}
-                revert={revert}
-                setRevert={setRevert}
-                formData={formData}
-                searchType={searchType}
-                sortAccending={sortAccending}
-                sortDeccending={sortDeccending}
-            />
-            <ReturnedData
-                data={data}
-                formData={formData}
-                blockedArr={blockedArr}
-                handleBlock={handleBlock}
-                checkInput={checkInput}
-            />
-            <BlockedArray blockedArr={blockedArr} handleUnblock={handleUnblock} />
+        <>
+            <main className="App">
+                <Header
+                    handleChange={handleChange}
+                    searchTerm={searchTerm}
+                    revert={revert}
+                    setRevert={setRevert}
+                    formData={formData}
+                    searchType={searchType}
+                    sortAccending={sortAccending}
+                    sortDeccending={sortDeccending}
+                />
+                <ReturnedData
+                    data={data}
+                    formData={formData}
+                    blockedArr={blockedArr}
+                    handleBlock={handleBlock}
+                    checkInput={checkInput}
+                />
+                <BlockedArray blockedArr={blockedArr} handleUnblock={handleUnblock} />
+
+            </main>
             <Footer toggle={toggle} setToggle={setToggle} igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
-        </div>
+        </>
     );
 }
 
