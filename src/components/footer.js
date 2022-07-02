@@ -64,11 +64,11 @@ export default function Footer({ toggle, setToggle, igniteToggle, setIgniteToggl
                     <div className={styles.crownSection}>
                         <span>Emitter:</span>
                         <select
+                            className={styles.buildSaberOption}
                             onChange={() => {
                                 setToggle(!toggle);
                             }}
                             ref={crownColor}
-                            id="pet-select"
                         >
                             <option value="black">Numidium</option>
                             <option value="gray">Beskar</option>

@@ -9,7 +9,7 @@ export default function blockedArray({ blockedArr, handleUnblock, blockToggle })
                             <div className={styles.options} key={index}>
                                 <div style={{ color: "red" }}>
                                     <p>{blockedName}</p>
-                                    <button
+                                    <button id="unblockButton"
                                         onClick={() => {
                                             handleUnblock(blockedName);
                                         }}

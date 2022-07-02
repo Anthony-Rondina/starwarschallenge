@@ -18,6 +18,7 @@ export default function header({
                 <h1>Search the Galaxy!</h1>
                 <div className={styles.topItem}>
                     <select
+                        className={styles.topSelect}
                         onChange={() => {
                             setRevert(!revert);
                         }}

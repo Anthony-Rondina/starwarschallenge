@@ -11,3 +11,27 @@ article {
     display: inline-block;
     margin: 5px;
 }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.postHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #219ebc;
+    border: solid 2px #fb8500;
+    height: 55px;
+    text-decoration: underline;
+    color: #edede9;
+}

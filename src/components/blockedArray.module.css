@@ -26,3 +26,7 @@
     flex-direction: column;
     text-align: center;
 }
+
+#unblockButton {
+    font-size: 12px;
+}

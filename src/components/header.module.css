@@ -39,7 +39,7 @@ h1 {
 }
 
 
-select {
+.topSelect {
     padding: 1vmin;
     font-size: 1.5vmin;
     border: .1vmin solid goldenrod;
@@ -49,13 +49,19 @@ select {
 }
 
 input {
-    padding: 1vmin;
+    padding: 13px;
     font-size: 2vmin;
     border: .1vmin solid goldenrod;
     border-radius: .5vmin;
     color: var(black);
     outline: none;
     height: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 black, .5px -1px 0 white, -1px .5px 0 white, .5px .5px 0 white;
 }
 
 button {

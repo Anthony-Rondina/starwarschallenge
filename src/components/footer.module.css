@@ -18,3 +18,7 @@ footer {
     border-top: solid 8px goldenrod;
     height: 200px;
 }
+
+.buildSaberOption {
+    padding: 10px !important;
+}

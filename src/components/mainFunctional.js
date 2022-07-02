@@ -11,6 +11,8 @@ function MainFunctional() {
     const [igniteToggle, setIgniteToggle] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [revert, setRevert] = useState(false);
+    const [loading, setLoading] = useState(false)
+    const [searchDataType, setSearchDataType] = useState('people')
     const [blockedArr, setBlockedArr] = useState([]);
     const [formData, setFormData] = useState({
         searchTerm: ""
@@ -18,6 +20,7 @@ function MainFunctional() {
     let searchTerm = useRef();
     let searchType = useRef();
     useEffect(() => {
+        setLoading(true)
         if (searchType.current.value == "people") {
             starwars.getPeople().then((response) => {
                 // console.log("response", response);
@@ -39,6 +42,10 @@ function MainFunctional() {
                 setData(response);
             });
         }
+        setSearchDataType(searchType.current.value)
+
+        setLoading(false)
+
     }, [revert]);
 
     useEffect(() => { }, [toggle]);
@@ -87,38 +94,48 @@ function MainFunctional() {
         }
         return true;
     };
+    if (loading) {
+        return (
+            <h2>Loading</h2>
+        )
+    } else {
+        return (
+            <>
+                <Header
+                    searchDataType={searchDataType}
 
-    return (
-        <>
-            <Header
-                handleChange={handleChange}
-                searchTerm={searchTerm}
-                revert={revert}
-                setRevert={setRevert}
-                formData={formData}
-                searchType={searchType}
-                sortAccending={sortAccending}
-                sortDeccending={sortDeccending}
-                blockToggle={blockToggle}
-                setBlockToggle={setBlockToggle}
-            />
-            <BlockedArray blockToggle={blockToggle} blockedArr={blockedArr} handleUnblock={handleUnblock} />
-
-            <main>
-
-                <ReturnedData
-                    data={data}
+                    handleChange={handleChange}
+                    searchTerm={searchTerm}
+                    revert={revert}
+                    setRevert={setRevert}
                     formData={formData}
-                    blockedArr={blockedArr}
-                    handleBlock={handleBlock}
-                    checkInput={checkInput}
+                    searchType={searchType}
+                    sortAccending={sortAccending}
+                    sortDeccending={sortDeccending}
+                    blockToggle={blockToggle}
+                    setBlockToggle={setBlockToggle}
                 />
+                <BlockedArray blockToggle={blockToggle} blockedArr={blockedArr} handleUnblock={handleUnblock} />
 
-            </main>
+                <main>
+                    {console.log(searchDataType)}
+                    <ReturnedData
+                        loading={loading}
 
-            <Footer toggle={toggle} setToggle={setToggle} igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
-        </>
-    );
+                        searchType={searchDataType}
+                        data={data}
+                        formData={formData}
+                        blockedArr={blockedArr}
+                        handleBlock={handleBlock}
+                        checkInput={checkInput}
+                    />
+
+                </main>
+
+                <Footer toggle={toggle} setToggle={setToggle} igniteToggle={igniteToggle} setIgniteToggle={setIgniteToggle} />
+            </>
+        );
+    }
 }
 
 export default MainFunctional;
