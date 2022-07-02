@@ -17,8 +17,15 @@ footer {
     background-color: #023047;
     border-top: solid 8px goldenrod;
     height: 200px;
+    color: white;
+    font-size: 25px;
 }
 
 .buildSaberOption {
     padding: 10px !important;
+}
+
+footer select {
+    height: 30px;
+    font-size: 14px;
 }
