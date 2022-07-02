@@ -9,10 +9,11 @@
     transition-property: height;
     transition-duration: 1s;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .results {
+    font-weight: bold;
+    font-size: 20px;
     margin-top: -25px;
     display: flex;
     justify-content: space-evenly;

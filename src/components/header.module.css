@@ -16,8 +16,8 @@ nav {
     color: white;
     position: absolute;
     right: 0;
-    margin-top: 177px;
-
+    margin-top: 165px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -38,11 +38,33 @@ h1 {
     color: goldenrod;
 }
 
+
+select {
+    padding: 1vmin;
+    font-size: 1.5vmin;
+    border: .1vmin solid goldenrod;
+    border-radius: .5vmin;
+    height: 47px;
+    cursor: pointer;
+}
+
 input {
+    padding: 1vmin;
+    font-size: 2vmin;
+    border: .1vmin solid goldenrod;
+    border-radius: .5vmin;
+    color: var(black);
+    outline: none;
     height: 20px;
 }
 
-select {
-    height: 26px;
-    width: 130px;
+button {
+    padding: 5px;
+    font-size: 1.5vmin;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
 }
