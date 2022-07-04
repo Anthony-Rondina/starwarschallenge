@@ -76,3 +76,11 @@
     height: 20px;
     width: 20px;
 }
+
+@media only screen and (max-width: 320px) {
+    .lightsaberContainter {}
+
+    .beam {
+        width: 200px;
+    }
+}
